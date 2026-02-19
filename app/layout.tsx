@@ -1,3 +1,14 @@
+/**
+ * LUMOS Commerce - Transparent Tech E-Commerce
+ * Root Layout
+ *
+ * @author Muhammad Nur Azis Mujiono
+ * @github https://github.com/mnurazismu
+ * @year 2026
+ *
+ * Licensed under MIT. See LICENSE file for full terms.
+ */
+
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";

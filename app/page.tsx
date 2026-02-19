@@ -1,3 +1,14 @@
+/**
+ * LUMOS Commerce - Transparent Tech E-Commerce
+ * Homepage
+ *
+ * @author Muhammad Nur Azis Mujiono
+ * @github https://github.com/mnurazismu
+ * @year 2026
+ *
+ * Licensed under MIT. See LICENSE file for full terms.
+ */
+
 import { FeaturedCarousel } from "@/components/home/featured-carousel";
 import { CategoryGrid } from "@/components/home/category-grid";
 import { NewArrivals } from "@/components/home/new-arrivals";

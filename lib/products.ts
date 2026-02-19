@@ -1,3 +1,14 @@
+/**
+ * LUMOS Commerce - Transparent Tech E-Commerce
+ * Product & Category Data
+ *
+ * @author Muhammad Nur Azis Mujiono
+ * @github https://github.com/mnurazismu
+ * @year 2026
+ *
+ * Licensed under MIT. See LICENSE file for full terms.
+ */
+
 import { Product, Category } from "./types";
 
 // ============================================================

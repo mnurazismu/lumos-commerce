@@ -1,3 +1,14 @@
+/**
+ * LUMOS Commerce - Transparent Tech E-Commerce
+ * Zustand State Management (Cart & Wishlist)
+ *
+ * @author Muhammad Nur Azis Mujiono
+ * @github https://github.com/mnurazismu
+ * @year 2026
+ *
+ * Licensed under MIT. See LICENSE file for full terms.
+ */
+
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { Product } from './data';
