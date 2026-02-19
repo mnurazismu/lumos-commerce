@@ -364,9 +364,9 @@ export const PRODUCTS: Product[] = [
         longDescription:
             "Not just a cable — a statement. The Glass Cable features a transparent PVC jacket that reveals the individually color-coded internal wires and braided EMI shielding. Supporting 240W USB PD charging and 40Gbps Thunderbolt 4 data transfer, it's the world's first cable that looks as good as it performs. Available in 1m and 2m lengths.",
         price: 39,
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=800&q=80",
         images: [
-            "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+            "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=800&q=80",
         ],
         category: "accessories",
         specs: {
