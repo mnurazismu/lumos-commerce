@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LUMOS Commerce
 
-## Getting Started
+**Transparency is the new luxury.**
 
-First, run the development server:
+A premium e-commerce storefront for transparent tech accessories — built with Next.js 16, Tailwind CSS 4, Framer Motion, and Zustand. Features a glassmorphism dark aesthetic, fully animated UI, and a complete shopping flow from browsing to checkout.
+
+---
+
+## ✨ Features
+
+### 🛍️ Shopping Experience
+- **13 products** across 6 categories with detailed specs, reviews, and color variants
+- **Product cards** with X-Ray hover effect, wishlist toggle, and quick-add-to-cart
+- **Advanced shop page** — search, category filters, sort (price/name/rating)
+- **4 curated collections** (Work from Home, Gaming Setup, Audio Essentials, New Arrivals)
+- **Product detail** with image gallery, specifications tab, customer reviews, and related products
+
+### 🛒 Cart & Checkout
+- **Persistent cart** (Zustand + localStorage) with quantity controls (+/−)
+- **Cost breakdown** — subtotal, shipping (free over $100), estimated tax, total
+- **Multi-step checkout** — Shipping → Payment → Confirmation
+- **Order summary sidebar** with item thumbnails and live totals
+
+### ❤️ Wishlist
+- **Persistent wishlist** with heart toggle on every product card
+- **Dedicated wishlist page** with empty state CTA
+
+### 📝 Content
+- **Blog** with tag cloud, featured post hero, and article detail pages
+- **FAQ** with categorized accordion sections
+- **Contact page** with info cards and form
+- **About page** with company timeline, core values, and stats
+
+### 🎨 Design & UX
+- **Glassmorphism** dark theme with cyan/purple accents
+- **Framer Motion animations** — scroll reveals, staggered grids, floating elements, hover micro-interactions
+- **Custom scrollbar** and smooth scrolling
+- **Responsive** — mobile menu, adaptive grids
+- **Custom 404 page**
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 16 (App Router, SSG) |
+| Styling | Tailwind CSS 4 |
+| Animation | Framer Motion |
+| State | Zustand (persist middleware) |
+| UI Components | Radix UI + shadcn/ui |
+| Fonts | Inter + Outfit (Google Fonts) |
+| Icons | Lucide React |
+| Language | TypeScript |
+
+---
+
+## 🚀 Getting Started
 
 ```bash
+# Clone
+git clone https://github.com/yourusername/lumos-commerce.git
+cd lumos-commerce
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+lumos-commerce/
+├── app/
+│   ├── page.tsx              # Homepage (7 sections)
+│   ├── layout.tsx            # Root layout (navbar, cart, footer)
+│   ├── not-found.tsx         # Custom 404
+│   ├── shop/page.tsx         # Shop with search/filter/sort
+│   ├── product/[id]/page.tsx # Product detail (SSG)
+│   ├── categories/           # Category listing + dynamic pages
+│   ├── collections/          # Collection listing + dynamic pages
+│   ├── checkout/page.tsx     # Multi-step checkout
+│   ├── blog/                 # Blog listing + [slug] detail
+│   ├── wishlist/page.tsx     # Wishlist page
+│   ├── about/page.tsx        # About with timeline & stats
+│   ├── contact/page.tsx      # Contact form + info
+│   └── faq/page.tsx          # FAQ with accordions
+├── components/
+│   ├── ui/                   # Reusable UI (button, input, glass-card, motion, skeleton, etc.)
+│   ├── layout/               # Navbar, Footer, MobileMenu
+│   ├── home/                 # Homepage sections (hero, category-grid, new-arrivals, etc.)
+│   ├── product/              # ProductCard, WishlistButton, AddToCartButton
+│   ├── cart/                  # CartSheet
+│   ├── blog/                 # BlogCard
+│   └── shared/               # Skeletons
+├── lib/
+│   ├── data.ts               # Barrel export
+│   ├── products.ts           # 13 products with full data
+│   ├── collections.ts        # 4 collections
+│   ├── blog.ts               # 4 blog posts
+│   ├── reviews.ts            # Customer reviews
+│   ├── store.ts              # Zustand stores (cart + wishlist)
+│   └── utils.ts              # Utilities
+└── public/
+    └── images/               # Product and blog images
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📊 Build Output
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+40 static pages — 0 errors — 0 warnings
 
-## Deploy on Vercel
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+MIT © LUMOS
