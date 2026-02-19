@@ -1,7 +1,27 @@
 {
   "name": "lumos-commerce",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "LUMOS Commerce — Modern transparent tech e-commerce storefront built with Next.js 16, Tailwind CSS 4, and Framer Motion",
+  "author": {
+    "name": "Muhammad Nur Azis Mujiono",
+    "url": "https://github.com/mnurazismu"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mnurazismu/lumos-commerce.git"
+  },
+  "homepage": "https://github.com/mnurazismu/lumos-commerce",
+  "keywords": [
+    "ecommerce",
+    "nextjs",
+    "tailwindcss",
+    "framer-motion",
+    "zustand",
+    "glassmorphism",
+    "transparent-tech"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

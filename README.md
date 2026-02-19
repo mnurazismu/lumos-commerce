@@ -59,7 +59,7 @@ A premium e-commerce storefront for transparent tech accessories — built with 
 
 ```bash
 # Clone
-git clone https://github.com/yourusername/lumos-commerce.git
+git clone https://github.com/mnurazismu/lumos-commerce.git
 cd lumos-commerce
 
 # Install dependencies
@@ -130,6 +130,12 @@ lumos-commerce/
 
 ---
 
+## 👤 Author
+
+**Muhammad Nur Azis Mujiono** — [@mnurazismu](https://github.com/mnurazismu)
+
+---
+
 ## 📄 License
 
-MIT © LUMOS
+MIT © 2026 [Muhammad Nur Azis Mujiono](https://github.com/mnurazismu)
