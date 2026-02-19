@@ -96,20 +96,35 @@ export function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} LUMOS. All rights reserved.
-                    </p>
-                    <div className="flex items-center gap-6">
-                        {["Twitter", "Instagram", "YouTube", "GitHub"].map((social) => (
+                <div className="border-t border-white/5 pt-8 flex flex-col items-center gap-4">
+                    <div className="w-full flex flex-col md:flex-row items-center justify-between gap-4">
+                        <p className="text-sm text-muted-foreground">
+                            © {new Date().getFullYear()} LUMOS. All rights reserved.
+                        </p>
+                        <div className="flex items-center gap-6">
+                            {["Twitter", "Instagram", "YouTube", "GitHub"].map((social) => (
+                                <a
+                                    key={social}
+                                    href="#"
+                                    className="text-sm text-muted-foreground hover:text-white transition-colors"
+                                >
+                                    {social}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="w-full border-t border-white/5 pt-4 text-center">
+                        <p className="text-xs text-muted-foreground">
+                            Designed & Built by{" "}
                             <a
-                                key={social}
-                                href="#"
-                                className="text-sm text-muted-foreground hover:text-white transition-colors"
+                                href="https://github.com/mnurazismu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-medium hover:from-cyan-300 hover:to-blue-300 transition-all"
                             >
-                                {social}
+                                Nur Azis
                             </a>
-                        ))}
+                        </p>
                     </div>
                 </div>
             </div>
